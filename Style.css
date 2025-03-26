@@ -1,0 +1,541 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+.home-page {
+  width: 100%;
+  /* width: 1200px; */
+  /* margin: auto; */
+  height: 150vh;
+  background-image: url(image/House-of-the-dragon.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 100px 15px 100px;
+  align-items: center;
+}
+.logo {
+  width: 60px;
+}
+.logo img {
+  width: 100%;
+}
+.menu {
+  display: flex;
+  gap: 60px;
+}
+.menu li {
+  color: white;
+  list-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.3s linear;
+}
+.menu li:hover {
+  color: red;
+  cursor: pointer;
+}
+.account {
+  display: flex;
+  gap: 20px;
+}
+.account i {
+  color: white;
+  font-size: 30px;
+}
+.account span {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.home-title {
+  margin-left: 100px;
+  margin-top: 100px;
+}
+.new-release {
+  color: rgb(194, 194, 194);
+  font-weight: 700;
+  border-left: 3px solid rgb(233, 1, 1);
+  padding-left: 15px;
+}
+.title {
+  font-size: 70px;
+  margin-top: 25px;
+  color: white;
+}
+.movie-detail {
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: start;
+  gap: 25px;
+}
+.movie-detail .rate {
+  border: 2px solid;
+  background: conic-gradient(green 71%, gray 0%);
+  padding: 10px;
+  border-radius: 50%;
+}
+.movie-detail .cc {
+  border: 2px solid white;
+  padding: 7px 20px 7px 20px;
+  border-radius: 50px;
+}
+.description {
+  width: 650px;
+  margin-top: 25px;
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+}
+.watch-btn {
+  font-size: 23px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  font-weight: 700;
+  padding: 16px 30px 16px 30px;
+  background-color: rgb(233, 1, 1);
+  border: 3px solid rgb(233, 1, 1);
+  border-radius: 5px;
+  color: white;
+  transition: all 0.3s ease;
+}
+.watch-btn:hover {
+  background-color: transparent;
+}
+/* ============================================================================= */
+.online-streaming {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  padding: 100px;
+  position: relative;
+  z-index: 2;
+}
+.online-streaming span {
+  font-size: 23px;
+  color: rgb(150, 150, 150);
+}
+.online-streaming h2 {
+  font-size: 50px;
+}
+.movie-online-container {
+  display: grid;
+  margin-top: 30px;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.online-movie-card {
+  width: 100%;
+  height: 450px;
+  background-color: gray;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.online-movie-card:first-child {
+  background-image: url(image/online-movie1.jpg);
+}
+.online-movie-card:nth-child(2) {
+  background-image: url(image/online-movie2.jpg);
+}
+.online-movie-card:nth-child(3) {
+  background-image: url(image/online-movie3.jpg);
+}
+.online-movie-card:last-child {
+  background-image: url(image/online-movie4.jpg);
+}
+.background-opacity {
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.191);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  transition: all 0.3s ease;
+}
+.background-opacity:hover {
+  background-color: rgba(0, 0, 0, 0.403);
+  cursor: pointer;
+}
+.action {
+  opacity: 0;
+  background-color: red;
+  color: white !important;
+  font-size: 15px !important;
+  padding: 3px 8px 3px 8px;
+  transition: all 0.5s ease;
+}
+.background-opacity:hover .action {
+  opacity: 1;
+}
+.background-opacity h3 {
+  color: white;
+  font-size: 33px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+.play {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 10px;
+}
+.play .play-btn {
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.play span {
+  font-size: 18px;
+  color: white;
+}
+.play-btn:hover {
+  background-color: red;
+  color: white;
+}
+
+/* ============================================================================= */
+.movie {
+  background-color: #111111;
+  position: relative;
+  z-index: 2;
+  padding: 100px;
+}
+.movie p {
+  text-align: center;
+  color: rgb(173, 173, 173);
+  font-size: 23px;
+  font-weight: 600;
+}
+.movie h2 {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+}
+.movie-container {
+  margin-top: 30px;
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(6, 1fr);
+}
+.detail .movie-title {
+  text-decoration: none;
+}
+.movie-image {
+  width: 100%;
+  height: 280px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.movie-image1 {
+  background-image: url(image/THE-DARK-KNIGHT.jpg);
+}
+.movie-image2 {
+  background-image: url(image/Ambulance.jpg);
+}
+.movie-image3 {
+  background-image: url(image/K.G.F.jpg);
+}
+.movie-image4 {
+  background-image: url(image/HOBBIT.jpg);
+}
+.movie-image5 {
+  background-image: url(image/SPIDER-MAN.jpg);
+}
+.movie-image6 {
+  background-image: url(image/STALLONE-COBRA.jpg);
+}
+.movie-image7 {
+  background-image: url(image/LAND-OF-BAD.jpg);
+}
+.movie-image8 {
+  background-image: url(image/TOP-GUN.jpg);
+}
+.movie-image9 {
+  background-image: url(image/online-movie4.jpg);
+}
+.movie-image10 {
+  background-image: url(image/online-movie3.jpg);
+}
+.movie-image11 {
+  background-image: url(image/online-movie2.jpg);
+}
+.movie-image12 {
+  background-image: url(image/online-movie1.jpg);
+}
+.movie-image div {
+  display: flex;
+  align-items: end;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.movie-image div:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.399);
+  cursor: pointer;
+}
+.movie-image div img {
+  width: 45px !important;
+}
+.movie-image div:hover .movie-image div img {
+  width: 50px !important;
+}
+.detail div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin-top: 10px;
+}
+.detail div span:first-child {
+  border: 1px solid white;
+  padding: 2px;
+}
+.category {
+  color: red !important;
+  font-size: 17px !important;
+  text-align: left !important;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.movie-title {
+  font-size: 25px;
+  color: white;
+}
+.BROWS-ALL-MOVIES {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.BROWS-ALL-MOVIES button {
+  font-size: 23px;
+  padding: 18px 45px 18px 45px;
+  background-color: red;
+  color: white;
+  border: 2px solid red;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+.BROWS-ALL-MOVIES button:hover {
+  background-color: transparent;
+}
+
+/* ================================================================= */
+.audio-image {
+  width: 150px !important;
+}
+.BROWS-ALL-AUDIOBOOKS {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.BROWS-ALL-AUDIOBOOKS button {
+  font-size: 23px;
+  padding: 18px 45px 18px 45px;
+  background-color: red;
+  color: white;
+  border: 2px solid red;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+.BROWS-ALL-AUDIOBOOKS button:hover {
+  background-color: transparent;
+}
+/* ================================================================= */
+.plan {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  padding: 100px;
+}
+.plan .title-plan {
+  text-align: center;
+  font-size: 23px;
+  font-weight: 600;
+  color: rgb(194, 194, 194);
+}
+.plan h2 {
+  text-align: center;
+  font-size: 50px;
+  color: white;
+}
+.video {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.plan-collection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
+  margin-top: 40px;
+}
+.plan1 {
+  width: 100%;
+  height: 450px;
+  padding: 50px;
+  text-align: center;
+  background-color: whitesmoke;
+}
+.plan1 img {
+  width: 80px;
+}
+.plan1 .plan-p1 {
+  font-size: 20px;
+  margin-top: 15px;
+}
+.plan1 h3 {
+  font-size: 80px;
+  font-weight: bold;
+  margin-top: 7px;
+  color: rgb(74, 74, 74);
+}
+.plan1 button {
+  width: 100%;
+  font-size: 23px;
+  padding: 15px 0px 15px 0;
+  margin-top: 15px;
+  font-weight: bold;
+  color: white;
+  background-color: red;
+  border: 2px solid red;
+  transition: all 0.3s ease;
+}
+.plan1 button:hover {
+  background-color: transparent;
+  color: black;
+}
+.plan1 .plan-p3 {
+  margin-top: 15px;
+}
+.plan2 {
+  height: 520px;
+}
+.save {
+  width: 130px;
+  margin: auto;
+  border-radius: 50px;
+  color: red;
+  background-color: #fde5e5;
+  padding: 8px 15px 8px 15px;
+  margin-top: 15px;
+}
+.discount {
+  margin-top: 10px;
+  color: rgb(145, 145, 145);
+}
+/* ============================================================= */
+.footer{
+  width: 100%;
+  height: 100vh;
+  background-color: #212121;
+  position: relative;
+  z-index: 2;
+  padding: 100px;
+}
+.footer h3{
+  text-align: center;
+  font-size: 45px;
+  color: white;
+}
+.footer .title-desc{
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+  color: white;
+}
+.contact-form{
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  gap: 20px;
+}
+.contact-form input{
+  width: 600px;
+  font-size: 20px;
+  padding: 30px;
+  border: none;
+  outline: none;
+  background-color: white;
+}
+.contact-form button{
+  font-size: 20px;
+  width: 180px;
+  background-color: red;
+  border: none;
+  color: white;
+  font-weight: 700;
+}
+.line{
+  width: 100%;
+  height: 0.5px;
+  background-color: rgb(145, 145, 145);
+  margin: 80px 0 80px 0;
+}
+
+.footer-menu{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+}
+
+.menu1{
+  grid-column: span 2;
+}
+.menu1 p:first-child{
+  font-size: 24px;
+  text-align: left;
+  color: white;
+}
+.menu1 .menu-desc{
+  text-align: left;
+  font-size: 19px;
+  margin-top: 15px;
+  color: white;
+}
+.select{
+  width: 150px;
+  border: 1px solid #a5a5a5;
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 25px 14px 25px;
+  margin-top: 30px;
+}
+.select span{
+  color: white;
+}
+
+.menu2 p{
+  color: white;
+  font-size: 24px;
+}
+.menu2 ul{
+  margin-left: 20px;
+  margin-top: 15px;
+}
+.menu2 ul li{
+  color: white;
+  margin-top: 8px;
+}
